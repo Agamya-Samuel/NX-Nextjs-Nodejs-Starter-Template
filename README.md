@@ -1,4 +1,4 @@
-# NxNextjsNodejsStarterTemplate
+# Nx-Nextjs-Nodejs-Starter-Template
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
 
@@ -6,18 +6,36 @@
 
 [Learn more about this workspace setup and its capabilities](https://nx.dev/getting-started/intro#learn-nx?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
 
-## Run tasks
+## To Run the Project
 
-To run tasks with Nx use:
+First install yarn globally in your system:
 
 ```sh
-npx nx <target> <project-name>
+npm -g i yarn
 ```
 
-For example:
+Then install nx globally in your system:
 
 ```sh
-npx nx build myproject
+yarn global add nx
+```
+
+Install packages:
+
+```sh
+yarn
+```
+
+To run NextJS Frontend use:
+
+```sh
+nx dev app
+```
+
+To run NodeJS Backend use:
+
+```sh
+nx serve api
 ```
 
 These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
